@@ -1,0 +1,317 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+/*------------------------------------------/*DEIXANDO O SITE RESPONSIVO*-------------------------------------------------------*/
+@media only screen and (max-width: 480px) {
+        
+    /*CONFIGURAÇÕES VERSÕES PEQUENAs MAIN GLOBAL*/
+    main {
+        margin: 45px;
+    }
+
+    /*CONFIGURAÇÕES VERSÕES PEQUENAs PÁGINA HOME*/
+    .fundo {
+        display: none;
+    }
+
+    section {
+        display: contents;
+        padding: 0px;
+        margin: 0px;
+        text-align: justify;
+        justify-content: center;
+        width: auto;
+    }
+
+    section > p h1 {
+        width: auto;
+    }
+
+    /*FIM DAS CONFIGURAÇÕES VERSÕES PEQUENAs PÁGINA HOME*/
+
+
+    /*CONFIGURAÇÕES VERSÕES PEQUENAs PÁGINA SERVIÇOS*/
+    .pags-vm {
+        display: block;
+    }
+
+    section.pags-vm ul {
+        font-family: 'Tilt Neon', cursive;
+        padding: 2px;
+        list-style-type: '\1F680\00A0\00A0';
+        
+    }
+
+
+    .sec-01 {
+        display: none;
+    }
+    /*FIM DAS CONFIGURAÇÕES VERSÕES PEQUENAs PÁGINA SERVIÇOS*/
+    
+    }
+
+    @media only screen and (min-width: 481px) and (max-width: 1024px) {
+          
+        .pags-vm{
+            display: none;
+        }
+
+        .fundo {
+            display: none;
+        }
+
+        main {
+            height: 1800px;
+        }
+    
+        section {
+            display: block;
+            padding: 5px;
+            text-align: justify;
+            width: auto;
+        }
+
+        section > p {
+            width: auto;
+            padding: 15px;
+        }
+        
+        .sec-01 {
+            display: block;
+            flex-direction: column;
+            text-align: center;
+        }
+        
+    }
+
+    @media only screen and (min-width: 1025px) {
+          
+        .pags-vm {
+            display: none;
+        }
+        
+        }
+
+/*------------------------------------------/*CONFIGURAÇÕES GLOBAIS*------------------------------------------------------------*/
+
+:root {
+    --cor01: #A2F2CD;
+    --cor02: #6FA68C;
+    --cor03: #4D7361;
+    --cor04: #1A2620;
+    --cor05: #090D0B;
+
+}
+
+body {
+    background-color: var(--cor04);
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*--------------------------------------------------------------/*MENU*--------------------------------------------------------*/
+
+nav {
+    background-color: var(--cor04);
+    height: 60px;
+	width: auto;
+    position: relative;
+}
+
+nav img {
+	line-height: 65px;
+	padding: 1px;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+nav ul {
+	float: right;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor01);
+    padding: 5px;
+    font-family: 'Tilt Neon', cursive;
+    margin: 0px;
+}
+
+nav a:hover {
+    background-color: var(--cor02);
+    color: var(--cor04);
+    border-radius: 10px ;
+}
+
+/*-------------------------------------------/*TAG MAIN PRINCIPAL E GLOBAL*-------------------------------------------------------*/
+main {
+    margin-top: 59px;
+    background-color: var(--cor04);
+    padding: 10px;
+    color: #090D0B;
+    border-radius: 50px;
+    margin: 50px;
+    align-items: center;
+}
+
+
+main section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+main img {
+    width: 450px;
+    height: 450px;
+    border-radius: 350px;
+}
+
+
+/*-------------------------------------------------------/*PAGINA HOME*--------------------------------------------------------------*/
+main p {
+    font-size: 17px;
+    margin-top: 80px;
+    font-family: 'Tilt Neon', cursive;
+    color: var(--cor01);
+}
+
+main h1 {
+    font-family: 'Tilt Neon', cursive;
+    color: var(--cor01);
+    font-size: 80px;
+}
+
+div.chamada{
+    margin-left: 10px;
+}
+
+.mais {
+   margin-top: 10px;
+   width: 100px;
+   height: 35px;
+   background-color: var(--cor01);
+   color: var(--cor04);
+   border-radius: 30px;
+   border-color: var(--cor03);
+}
+
+/*-------------------------------------------------------/*PAGINA SERVIÇOS*--------------------------------------------------------------*/
+
+.m-ser h3:hover {
+    color: var(--cor01);    
+}
+
+.m-ser {
+    margin: 0px;
+    border-radius: 0px;
+    background-color: white;
+}
+
+main article {
+    padding: 30px;
+    text-align: center;
+    height: 1200px;
+}
+
+article section.sec-01 {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main article h1 {
+    font-family: 'Tilt Neon', cursive;
+    color: var(--cor03);
+    font-size: 80px;
+    margin-top: 0px;
+   
+}
+
+article h1:hover {
+    animation: bounce;
+    animation-duration: 0.7s;
+    color: var(--cor01);
+}
+
+article h3 {
+    color: var(--cor03);
+    font-family: 'Tilt Neon', cursive;
+}
+
+article h2 {
+    color: var(--cor03);
+    font-family: 'Tilt Neon', cursive;
+    text-decoration: underline;
+    
+}
+
+article img {
+    width: auto;
+    height: 150px;
+    border-radius: 30px;
+}
+
+article section.sec-02 {
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--cor05);
+    text-align: justify;
+}
+
+section.sec-02 > p {
+    margin-top: 20px;
+    color: var(--cor02);
+}
+
+
+picture:hover {
+    transform: scale(1.2);
+}
+
+article picture h2:hover {
+    color: var(--cor01);
+}
+
+aside {
+    background-color: #74ad9385;
+    height: 150px;
+    font-family: 'Tilt Neon', cursive;
+    
+    color: var(--cor03);
+    border-radius: 15px;
+}
+
+aside > ul {
+    list-style-position: outside;
+    columns: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+aside a {
+    text-decoration: none;
+    text-align: center;
+}
+
+aside img{
+    width: 30px;
+    height: 30px;
+}
+
+/*----------------------------------------------------------/*RODAPÉ*----------------------------------------------------------------*/
+footer {
+    text-align: center;
+    font-size: 10px;
+    height: 30px;
+    font-family: 'Tilt Neon', cursive;
+    margin-bottom: 0px;
+    background-color: var(--cor04);
+}
+
